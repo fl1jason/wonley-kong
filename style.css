@@ -1,0 +1,163 @@
+
+body {
+    font-family: Emulogic, sans-serif; 
+    margin: auto;
+    background-color: #000000;
+}
+  
+#container {
+    display: flex;
+    flex-direction: column;
+    background-position: center; 
+    width: 850px;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 600px;
+    min-width: 842px;
+    background-position: center; 
+  }
+
+.walkway{
+    min-width: 600px;
+    height: 50px;
+    background-color: brown;
+    transform: rotate(3deg); /* Equal to rotateZ(45deg) */
+}
+
+#kong-barrels {
+    display: flex;
+}
+
+#barrels {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    top: 66px;
+    transform: rotate(5deg); /* Equal to rotateZ(45deg) */
+}
+
+#barrels img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#kong {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    position: relative;
+    top: 66px;
+    transform: rotate(5deg); /* Equal to rotateZ(45deg) */
+    border: 1px solid black;
+}
+
+#kong img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#kong img.stand {
+    top: -48px;
+    left: -96px;
+}
+
+#kong img.left-rage {
+    top: -48px;
+    left: -48px;
+}
+
+#kong img.left-roll {
+    top: -48px;
+    left: 0px;
+}
+
+#kong img.right-rage {
+    top: -48px;
+    left: -146px;
+}
+
+#kong img.right-roll {
+    top: -48px;
+    left: -196px;
+}
+
+#kong img.roll {
+    top: 0px;
+    left: -96px;
+}
+
+.girder-up {
+    width: 750px;
+    height: 50px;
+    transform: rotate(5deg); /* Equal to rotateZ(45deg) */
+    /* background-color: brown; */
+    background-image: url("sprites/girder.jpg");
+    background-repeat: repeat-x;
+}
+
+.girder-down {
+    width: 750px;
+    height: 50px;
+    margin-left: 100px;
+    transform: rotate(-5deg); /* Equal to rotateZ(45deg) */
+    background-image: url("sprites/girder.jpg");
+    background-repeat: repeat-x;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid black;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.barrel {
+    background-image: url("sprites/barrel.png");
+    width: 46px;
+    height: 46px;
+    position: relative;
+    left: 100px;
+    top: -50px;
+    transform: rotate(3deg); /* Equal to rotateZ(45deg) */
+}
+
+.pac-dot {
+    background-color: green;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: #ccc;
+}
+
+.power-pellet {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.pac-man {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.ghost-lair {
+
+}
